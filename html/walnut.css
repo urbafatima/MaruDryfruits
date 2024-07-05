@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFF2D7;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    font-family: poppins;
+    background: #242833;
+}
+#logo img{
+    height: 80px;
+}
+
+header a .logo {
+    font-family: babas;
+}
+
+header span:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    height: 320px;
+}
+h1{
+    margin-top: 140px;
+    margin-bottom: -90px;
+    color: #242833;
+    background-color: aquamarine;
+    font-family: bebas neue;
+}
+.marque {
+    background-color: #FFF2D7;
+    margin-top: 40px;
+    font-size: 100pr;
+    font-family: poppins;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+.container{
+    margin-top: 190px;
+}
+.marque marquee{
+    margin-top: 110px;
+    margin-bottom: -90px;
+}
+
+.container2 a {
+    text-decoration: none;
+}
+
+.container2 a:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+footer {
+    font-family: poppins;
+    background: #242833;
+}
+
+#footer2 {
+    font-family: poppins;
+    background: #242833;
+}
+
+#top-text {
+    background-color: #F7A701;
+    font-family: poppins;
+}

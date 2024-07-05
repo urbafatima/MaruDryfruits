@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="date.css">
+
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <div class="text-center">
+            <p id="top-text" class="text-center">Shipping Charges only Rs 199</p>
+
+
+        </div>
+        <!-- Navbar Start here -->
+        <nav class="navbar navbar-dark   navbar-expand-lg   ">
+
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="home.html"><img src="/WEBP images/main-logo.webp "
+                        alt="Image with Transparent Background" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Maru Dryfruits</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html"><span
+                                        class="links">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html"><span
+                                        class="links">about</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contactus.html"><span
+                                        class="links">Contact</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pyment.html"><span
+                                        class="links">Pyment</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="loginform.html"><span
+                                        class="links">login</span></a>
+                            </li>
+
+                            <!-- Navbar Dropdown Start here -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    most wanted
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="date.html">DATE</a></li>
+                                    <li><a class="dropdown-item" href="almond.html">ALMOND</a></li>
+                                    <li><a class="dropdown-item" href="cashew.html">CASHEW</a></li>
+                                    <li><a class="dropdown-item" href="walnut.html">WALLNUT</a></li>
+                                    <li><a class="dropdown-item" href="pistacio.html">PISTACIO</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="products.html">SEE MORE HERE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="marque">
+        <marquee behavior="" direction="">IMPORTANT NOTICE ?? DUE TO THE CURRENT WEATHER CONDITIONS, WE ARE TEMPORARILY
+            UNABLE TO SHIP TEMPERATURE-SENSITIVE PRODUCTS, SUCH AS CHOCOLATES, OUTSIDE KARACHI. WE APOLOGIZE FOR ANY
+            INCONVENIENCE AND THANK YOU FOR YOUR UNDERSTANDING.
+        </marquee>
+    </div>
+    <h1 class="text-center mb-4">Pick Your Favorite Product From Here</h1>
+
+
+    <div class="container my-5">
+       
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/dry arbai dates.webp" class="card-img-top" alt="Almonds">
+                    <div class="card-body">
+                        <h5 class="card-title">Dry Arbai Dates</h5>
+                        <p class="card-text">Delicious and nutritious almonds.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 112 PKR</option>
+                            <option>200gm - 180 PKR</option>
+                            <option>250gm - 225 PKR</option>
+                            <option>500gm - 550 PKR</option>
+                        </select>
+                        <a href="arbaidates.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/majbool dates.webp" class="card-img-top" alt="Cashews">
+                    <div class="card-body">
+                        <h5 class="card-title">Majbool Dates</h5>
+                        <p class="card-text">Creamy and crunchy cashews.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 309 PKR</option>
+                            <option>200gm - 495 PKR </option>
+                            <option>250gm - 618 PKR </option>
+                            <option>500gm - 1236 PKR</option>
+                        </select>
+                        <a href="majbooldates.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/premium ajwa dates.webp" class="card-img-top" alt="Walnuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Ajwa Dates</h5>
+                        <p class="card-text">Rich and healthy walnuts.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm -800 PKR</option>
+                            <option>200gm -1195 PKR </option>
+                            <option>250gm -1399 PKR </option>
+                            <option>500gm -2400 PKR </option>
+                        </select>
+                        <a href="premiumajvacart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/kalmi dates.webp" class="card-img-top" alt="kalmi dates">
+                    <div class="card-body">
+                        <h5 class="card-title">Kalmi Dates</h5>
+                        <p class="card-text">Tasty and crunchy pistachios.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 250 PKR</option>
+                            <option>200gm - 400 PKR</option>
+                            <option>250gm - 500 PKR</option>
+                            <option>500gm - 1000 PKR</option>
+                        </select>
+                        <a href="cart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/mobroom dates.webp" class="card-img-top" alt="majboom">
+                    <div class="card-body">
+                        <h5 class="card-title">Majboom Dates</h5>
+                        <p class="card-text">Sweet and juicy raisins.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 200 PKR</option>
+                            <option>200gm - 300 PKR</option>
+                            <option>250gm - 350 PKR</option>
+                            <option>500gm - 700 PKR</option>
+                        </select>
+                        <a href="majboon.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/fresh iranian dates.webp" class="card-img-top" alt=" iranian Dates">
+                    <div class="card-body">
+                        <h5 class="card-title"> Fresh Iranian Dates</h5>
+                        <p class="card-text">Naturally sweet and chewy dates.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 200 PKR</option>
+                            <option>200gm - 400 PKR</option>
+                            <option>250gm - 500 PKR</option>
+                            <option>500gm - 1000 PKR</option>
+                        </select>
+                        <a href="freshiranian.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/Sukkari dates.webp" class="card-img-top" alt="Figs">
+                    <div class="card-body">
+                        <h5 class="card-title">Sukkari Dates</h5>
+                        <p class="card-text">Soft and sweet figs.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 250 PKR</option>
+                            <option>200gm - 300 PKR</option>
+                            <option>250gm - 350 PKR</option>
+                            <option>500gm - 700 PKR</option>
+                        </select>
+                        <a href="sukkaridates.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/dry chuhara.webp" class="card-img-top" alt="Hazelnuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Dry Chuhara</h5>
+                        <p class="card-text">Crunchy and flavorful hazelnuts.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 150 PKR</option>
+                            <option>200gm - 200 PKR</option>
+                            <option>250gm - 250 PKR</option>
+                            <option>500gm - 500 PKR</option>
+                        </select>
+                        <a href="dryshuhara.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/dry zahidi dates.webp" class="card-img-top" alt="Pine Nuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Dry Zahidi Dates</h5>
+                        <p class="card-text">Delicate and buttery pine nuts.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 100 PKR</option>
+                            <option>200gm - 150 PKR</option>
+                            <option>250gm - 200 PKR</option>
+                            <option>500gm - 400 PKR</option>
+                        </select>
+                        <a href="dryzahididatescart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/premium sugai dates.webp" class="card-img-top" alt="sugai">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Sugai Dates</h5>
+                        <p class="card-text">Sweet and tangy apricots.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 250 PKR</option>
+                            <option>200gm - 350 PKR</option>
+                            <option>250gm - 400 PKR</option>
+                            <option>500gm - 800 PKR</option>
+                        </select>
+                        <a href="sugaicart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/mix saudi dates box.webp" class="card-img-top" alt="mix box">
+                    <div class="card-body">
+                        <h5 class="card-title">Mix Saudi Dates Box</h5>
+                        <p class="card-text">Rich and chewy prunes.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 200 PKR</option>
+                            <option>200gm - 300 PKR</option>
+                            <option>250gm - 350 PKR</option>
+                            <option>500gm - 700 PKR</option>
+                        </select>
+                        <a href="mixsaudidatescart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/WEBP images/premium dates in wooden.webp" class="card-img-top" alt="premium dates box">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Dates In Wooden Box</h5>
+                        <p class="card-text">Creamy and buttery macadamia nuts.</p>
+                        <select class="form-control mb-2">
+                            <option>125gm - 300 PKR</option>
+                            <option>200gm - 500 PKR</option>
+                            <option>250gm - 600 PKR</option>
+                            <option>500gm - 1000 PKR</option>
+                        </select>
+                        <a href="woodenpremiundatescart.html" class="btn btn-primary ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-light">
+        <div class=" container2 container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">About Us</h5>
+                    <p class="text-justify">Maru DryFruit specializes in providing high-quality dry fruits sourced from
+                        around the world.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="products.html" class="text-light">Shop</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contactus.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <p class="mb-4">123 Street Name, City, Country</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-phone-alt mr-2"></i> +1234567890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer2" class="container-fluid  text-light py-3">
+            <div class="text-center">
+                <p>&copy; 2024 Maru DryFruits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://kit.font-awesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

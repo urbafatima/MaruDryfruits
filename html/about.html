@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <title>About us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #FFF2D7;
+            background-size: cover;
+            height: 100vh;
+            /* background-color: #F7A701; */
+        }
+
+        h6{
+            background-color: #F7A701;
+            z-index: 2;
+            font-family: poppins;
+        }
+
+        .marque {
+            background-color: #FFF2D7;
+            margin-top: 150px;
+            /* margin-bottom: -90px; */
+            font-size: 100pr;
+            font-family: poppins;
+        }
+
+        header {
+            font-family: poppins;
+            background: #242833;
+            z-index: 1;
+        }
+
+        #logo img {
+            height: 80px;
+        }
+
+        header span {
+            color: #ffffffbf;
+        }
+
+
+        header span:hover {
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+        }
+        .container2 a {
+            text-decoration: none;
+        }
+
+        .container2 a:hover {
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        footer {
+            font-family: poppins;
+            background: #242833;
+        }
+
+        #footer2 {
+            font-family: poppins;
+            background: #242833;
+        }
+        /* zain stylings */
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            width: 80%;
+            /* max-widht: 800px; */
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        .text {
+            color: #662e93;
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        .input_text {
+            width: 100%;
+            border-radius: 23px;
+            border: none;
+            background: #f0f0f0;
+            padding: 1em;
+        }
+
+        .submit-btn {
+            border-top-right-radius: 23px;
+            border-bottom-right-radius: 23px;
+            background: #662e93;
+            color: white;
+            border: none;
+            padding: 0.5em;
+        }
+
+        .extra {
+            display: none;
+        }
+
+        p {
+            display: inline;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            display: block;
+            height: 1em;
+        }
+
+        label {
+            position: relative;
+            padding-bottom: 2em;
+            color: #5b2b81;
+            cursor: pointer;
+        }
+
+        label:before {
+            content: "read more";
+        }
+
+        input[type="checkbox"]:checked~label:before {
+            content: "read less";
+        }
+
+        .dots:has(~input[type="checkbox"]:checked) {
+            display: none
+        }
+
+        .extra:has(~input[type="checkbox"]:checked) {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <div class="text-center">
+            <h6 id="top-text" class="text-center">Shipping Charges only Rs 199</h6>
+
+
+        </div>
+        <!-- Navbar Start here -->
+        <nav class="navbar navbar-dark   navbar-expand-lg   ">
+
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="home.html"><img src="/WEBP images/main-logo.webp "
+                        alt="Image with Transparent Background" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Maru Dryfruits</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html"><span
+                                        class="links">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html"><span
+                                        class="links">about</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contactus.html"><span
+                                        class="links">Contact</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pyment.html"><span
+                                        class="links">Pyment</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="loginform.html"><span
+                                        class="links">login</span></a>
+                            </li>
+
+                            <!-- Navbar Dropdown Start here -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    most wanted
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="date.html">DATE</a></li>
+                                    <li><a class="dropdown-item" href="almond.html">ALMOND</a></li>
+                                    <li><a class="dropdown-item" href="cashew.html">CASHEW</a></li>
+                                    <li><a class="dropdown-item" href="walnut.html">WALLNUT</a></li>
+                                    <li><a class="dropdown-item" href="pistacio.html">PISTACIO</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="products.html">SEE MORE HERE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="marque">
+        <marquee behavior="" direction="">IMPORTANT NOTICE ?? DUE TO THE CURRENT WEATHER CONDITIONS, WE ARE TEMPORARILY
+            UNABLE TO SHIP TEMPERATURE-SENSITIVE PRODUCTS, SUCH AS CHOCOLATES, OUTSIDE KARACHI. WE APOLOGIZE FOR ANY
+            INCONVENIENCE AND THANK YOU FOR YOUR UNDERSTANDING.
+        </marquee>
+    </div>
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-2 col-sm-1">
+                <hr style="padding: 1em;">
+                <h1 class="text" style="font-size:50px; font-weight: 600 ;">About us</h1>
+                <h2 style="font-size:35px; font-weight: 500 ;">Welcome to Maru Dry Fruits</h2>
+                <p>
+                    For over 40 years, Maru Dry Fruits has been a trusted provider of premium dry fruits to customers
+                    across the nation. Our wide range of premium quality includes nuts, dry fruits, chocolate, honey,
+                    dates and snacks. We at Maru Dry Fruits carefully source and hand-pick items to ensure the freshest
+                    and tastiest products for our customers. We are a trusted name in the market committed to delivering
+                    excellence and satisfaction to our valued customers.
+                    Among our dried fruit selection, you'll find some of the best-tasting and most nutritious options.
+                    They are all carefully dried to retain their natural flavors and nutrients. These dried fruits are
+                    perfect for snacking, baking, or adding to your breakfast cereal.
+                </p>
+                <br>
+                <p>When it comes to imported dates or chocolates, we gather the highest quality from around the world.
+                    You'll be pleased to know that we import dates from Saudi Arabia which includes Ajwa, Kalmi,
+                    Mabroom, Khudri, Sukhri etc. On the other hand we offer Medjoul dates from Jordan. These two
+                    countries are famously known for producing some of the best dates in the world. These imported dates
+                    are sweet, juicy, and flavorful.
+
+                    For celebrations, appreciation or corporate gifting, the dry fruit baskets are a thoughtful gift.
+                    These gift baskets are healthy and tasty treats which include specific types of dry fruits, nuts,
+                    and chocolates. </p>
+                <p class="extra">
+                    <br>
+                    We offer a variety of pre-made baskets to choose from, and also provide the option to customize the
+                    baskets according to your budget and preferences. We offer dry Strawberry, dry Kiwi slice, dry
+                    Blueberry, dry Mango slice, Raisins, Figs, dry Dates, dry Apricot, and many more. They are all
+                    carefully dried to retain their natural flavors and nutrients. These dried fruits are perfect for
+                    snacking, baking, or adding to your breakfast cereal.
+                </p>
+
+                <input type="checkbox" id="btn">
+                <label for="btn"></label>
+            </div>
+
+            <div class="card">
+                <div class="card-body d-md-flex gap-3 align-items-center">
+                    <div class="col-md-4">
+                        <img src="/Assest/image_1.png" alt="image" class="img-fluid"
+                            style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <h3 class="text-center">Subscribe to our newsletter</h3>
+                        <div class="d-flex flex-row position-relative">
+                            <input type="email" placeholder="Enter your Email" class="form-control px-3 py-2">
+                            <button class="submit-btn btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/Assest/image_2.png" alt="image" class="img-fluid"
+                            style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer start here -->
+
+
+    <footer class="footer text-light">
+        <div class=" container2 container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">About Us</h5>
+                    <p class="text-justify">Maru DryFruit specializes in providing high-quality dry fruits sourced from
+                        around the world.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="products.html" class="text-light">Shop</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contactus.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <p class="mb-4">123 Street Name, City, Country</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-phone-alt mr-2"></i> +1234567890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer2" class="container-fluid  text-light py-3">
+            <div class="text-center">
+                <p>&copy; 2024 Maru DryFruits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://kit.font-awesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

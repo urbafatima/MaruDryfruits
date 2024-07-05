@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.1/sweetalert2.css"
+        integrity="sha512-n1PBkhxQLVIma0hnm731gu/40gByOeBjlm5Z/PgwNxhJnyW1wYG8v7gPJDT6jpk0cMHfL8vUGUVjz3t4gXyZYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Japnece Apricote</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #FFF2D7;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        header {
+            font-family: poppins;
+            background: #242833;
+        }
+
+        #logo img {
+            height: 80px;
+        }
+
+        header a .logo {
+            font-family: babas;
+        }
+
+        header span {
+            color: #ffffffbf;
+        }
+
+        header span:hover {
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        .marque {
+            background-color: #FFF2D7;
+            margin-top: 40px;
+            font-size: 100pr;
+            font-family: poppins;
+        }
+
+        #logo:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            margin-top: 190px;
+        }
+
+        .marque marquee {
+            margin-top: 110px;
+            margin-bottom: -90px;
+        }
+
+        .container2 a {
+            text-decoration: none;
+        }
+
+        .container2 a:hover {
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+        }
+
+        footer {
+            font-family: poppins;
+            background: #242833;
+        }
+
+        #footer2 {
+            font-family: poppins;
+            background: #242833;
+        }
+
+        #top-text {
+            background-color: #F7A701;
+            font-family: poppins;
+        }
+
+        .quantity {
+            margin-top: 10px;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+
+        #quantity-input {
+            width: 50px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin-top: 150px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header fixed-top">
+        <div class="text-center">
+            <p id="top-text" class="text-center">Shipping Charges only Rs 199</p>
+
+
+        </div>
+        <!-- Navbar Start here -->
+        <nav class="navbar navbar-dark   navbar-expand-lg   ">
+
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="home.html"><img src="/WEBP images/main-logo.webp "
+                        alt="Image with Transparent Background" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Maru Dryfruits</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html"><span
+                                        class="links">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html"><span
+                                        class="links">about</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contactus.html"><span
+                                        class="links">Contact us</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="pyment.html"><span
+                                        class="links">Pyment</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="loginform.html"><span
+                                        class="links">login</span></a>
+                            </li>
+
+                            <!-- Navbar Dropdown Start here -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    most wanted
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="date.html">DATE</a></li>
+                                    <li><a class="dropdown-item" href="almond.html">ALMOND</a></li>
+                                    <li><a class="dropdown-item" href="cashew.html">CASHEW</a></li>
+                                    <li><a class="dropdown-item" href="walnut.html">WALLNUT</a></li>
+                                    <li><a class="dropdown-item" href="pistacio.html">PISTACIO</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="products.html">SEE MORE HERE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="marque">
+        <marquee behavior="" direction="">IMPORTANT NOTICE ?? DUE TO THE CURRENT WEATHER CONDITIONS, WE ARE TEMPORARILY
+            UNABLE TO SHIP TEMPERATURE-SENSITIVE PRODUCTS, SUCH AS CHOCOLATES, OUTSIDE KARACHI. WE APOLOGIZE FOR ANY
+            INCONVENIENCE AND THANK YOU FOR YOUR UNDERSTANDING.
+        </marquee>
+    </div>
+
+    <section>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col">
+                    <div class="details">
+                        <div class="container-2 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <img class="image-fluid col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+                                src="/WEBP images/apricot image.webp" alt="apricot">
+                            <h2>Japnese Apricot</h2>
+                            <label for="weight">Choose weight:</label>
+                            <select id="weight" onchange="updatePrice()">
+                                <option value="250">125gm - 250 PKR</option>
+                                <option value="400">200gm - 400 PKR </option>
+                                <option value="500">250gm - 500 PKR </option>
+                                <option value="1000">500gm - 1000 PKR </option>
+                            </select>
+                            </select>
+                            <p id="total-price">Total Price: 250 PKR</p>
+                            <div class="quantity">
+                                <button id="decrease-btn" class="btn btn-warning">-</button>
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button id="increase-btn" class="btn btn-warning">+</button>
+                            </div>
+                            <button class="fire btn btn-primary" id="add-to-cart-btn">
+                                <img src="/Assest/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Add to Cart
+                            </button>
+                            <button class="fire2 btn btn-info" id="buy-now-btn">
+                                <img src="/Assest/shopping_bag_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start here -->
+
+    <footer class="footer text-light">
+        <div class=" container2 container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">About Us</h5>
+                    <p class="text-justify">Maru DryFruit specializes in providing high-quality dry fruits sourced from
+                        around the world.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="home.html" class="text-light">Home</a></li>
+                        <li><a href="products.html" class="text-light">Shop</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contactus.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <p class="mb-4">123 Street Name, City, Country</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-phone-alt mr-2"></i> +1234567890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer2" class="container-fluid  text-light py-3">
+            <div class="text-center">
+                <p>&copy; 2024 Maru DryFruits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.1/sweetalert2.min.js"
+        integrity="sha512-Ozu7Km+muKCuIaPcOyNyW8yOw+KvkwsQyehcEnE5nrr0V4IuUqGZUKJDavjSCAA/667Dt2z05WmHHoVVb7Bi+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        let quantity = 1;
+        let pricePerItem = 250;
+        function updatePrice() {
+            const weightSelect = document.getElementById('weight');
+            pricePerItem = parseInt(weightSelect.value);
+            updateTotalPrice();
+        }
+        function updateTotalPrice() {
+            const quantityInput = document.getElementById('quantity-input');
+            const currentValue = parseInt(quantityInput.value);
+            const totalPrice = currentValue * pricePerItem;
+            document.getElementById('total-price').innerText = 'Total Price: ' + totalPrice + ' PKR';
+        }
+        document.getElementById('increase-btn').addEventListener('click', function () {
+            const quantityInput = document.getElementById('quantity-input');
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+            updateTotalPrice();
+        });
+        document.getElementById('decrease-btn').addEventListener('click', function () {
+            const quantityInput = document.getElementById('quantity-input');
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+                updateTotalPrice();
+            }
+        });
+        document.getElementById('quantity-input').addEventListener('input', function () {
+            if (this.value < 1) {
+                this.value = 1;
+            }
+            updateTotalPrice();
+        });
+
+        // Initialize the total price
+        updatePrice();
+    </script>
+    <script>
+        $(document).on('click', '.fire', function () {
+            // Show SweetAlert
+            Swal.fire({
+                title: "Successfully!",
+                text: "Item Added To Cart",
+                icon: "success"
+            });
+        });
+    </script>
+    <script>
+        $(document).on('click', '.fire2', function () {
+            // Show SweetAlert
+            Swal.fire({
+                title: "Successfully!",
+                text: "Item Perchased",
+                icon: "success"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
